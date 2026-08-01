@@ -19,14 +19,26 @@ export function ShLiz() {
           <span className={styles.eyebrow}>Meet your practitioner</span>
           <h2>Hi, I&apos;m Liz.</h2>
           <p>
-            I created Stillhaven as a quiet space to help people reconnect with their bodies and calm an overworked
-            nervous system. My work blends hands-on massage, reiki, sound and breath — always one-to-one, always at your
-            pace.
+            I&apos;ve been a <strong>massage therapist since 2010</strong> and a{" "}
+            <strong>yoga teacher since 2019</strong>, having trained in Bali. Over the years I&apos;ve been lucky enough
+            to work with elite athletes — including the <strong>All Blacks, Springboks, Leinster</strong> and{" "}
+            <strong>Japanese national teams</strong> — when they were in Johannesburg or London for games.
           </p>
           <p>
-            Whether you&apos;re carrying tension, stress or simply need somewhere to slow down, my aim is the same: to
-            help you feel safe, supported and a little lighter when you leave.
+            My work has taken me trackside at the races, into homes and clinics, and alongside pregnant clients. I&apos;ve
+            always worked closely with <strong>physiotherapists</strong>, and in my movement therapy sessions I can guide
+            you through <strong>rehab exercises</strong> to support your recovery between treatments.
           </p>
+          <p>
+            Whatever you&apos;re carrying — tension, stress, injury or simply the need to slow down — my aim is the same:
+            to help you feel safe, supported and a little lighter when you leave.
+          </p>
+          <div className={styles.lizCreds}>
+            <span>Massage Therapist · 2010</span>
+            <span>Yoga Teacher · Bali, 2019</span>
+            <span>Elite &amp; team sports</span>
+            <span>Pre-natal &amp; movement therapy</span>
+          </div>
           <a
             href="https://lmfit.as.me/?appointmentType=category:Stillhaven%20Services"
             target="_blank"

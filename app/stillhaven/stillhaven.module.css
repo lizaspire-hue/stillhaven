@@ -579,6 +579,29 @@
   margin-bottom: 18px;
 }
 
+.lizBody p strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.lizCreds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0 28px;
+}
+
+.lizCreds span {
+  font-size: 12.5px;
+  letter-spacing: 0.03em;
+  color: var(--rose-deep);
+  padding: 7px 15px;
+  border-radius: 100px;
+  border: 1px solid var(--line);
+  background: var(--white);
+  font-weight: 500;
+}
+
 .lizBody .btn {
   margin-top: 10px;
 }
