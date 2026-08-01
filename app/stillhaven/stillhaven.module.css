@@ -185,27 +185,30 @@
 .breathRing {
   position: absolute;
   border-radius: 50%;
-  border: 1px solid var(--line);
+  border: 1.5px solid var(--rose);
 }
 .r1 {
   width: 420px;
   height: 420px;
+  border-color: var(--pink);
 }
 .r2 {
   width: 340px;
   height: 340px;
+  border-color: var(--rose);
 }
 .r3 {
   width: 260px;
   height: 260px;
+  border-color: var(--rose-deep);
 }
 
 .breathOrb {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  background: radial-gradient(circle at 32% 30%, var(--pink-soft), var(--blue) 70%);
-  box-shadow: 0 30px 60px -20px rgba(180, 150, 170, 0.45);
+  background: radial-gradient(circle at 32% 30%, var(--pink), var(--rose) 70%);
+  box-shadow: 0 30px 60px -20px rgba(150, 110, 130, 0.55);
   animation: breathe 7s ease-in-out infinite;
 }
 
