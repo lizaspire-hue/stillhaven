@@ -40,8 +40,8 @@ export function Hero() {
         </div>
         <div className="hero-media">
           <img
-            src="/images/hero-dog.png"
-            alt="A beautifully groomed golden retriever sitting proudly"
+            src="/images/pom-spa.jpg"
+            alt="A fluffy Pomeranian wrapped in a pink spa towel being pampered by a groomer"
           />
           <div className="hero-badge">
             <div>
