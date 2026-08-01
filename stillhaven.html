@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stillhaven — Massage, Reiki, Sound Healing &amp; Breathwork</title>
+<meta name="description" content="1:1 massage, reiki, sound healing and breathwork sessions. A quiet space to soften, reset and reconnect.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+
+  :root{
+    --bg:            #FBF8F6;
+    --pink:          #F5DEE3;
+    --pink-soft:     #FBEFF1;
+    --blue:          #DCE9EE;
+    --blue-soft:     #EEF5F7;
+    --ink:           #3C3739;
+    --ink-soft:      #776E71;
+    --rose:          #C99AA6;
+    --rose-deep:     #B98494;
+    --line:          #E9DFE2;
+    --white:         #FFFFFF;
+
+    --display: "Fraunces", Georgia, serif;
+    --body: "Work Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  *{ margin:0; padding:0; box-sizing:border-box; }
+
+  html{ scroll-behavior:smooth; }
+
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:var(--body);
+    font-weight:400;
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{ color:inherit; text-decoration:none; }
+  ul{ list-style:none; }
+  img{ max-width:100%; display:block; }
+
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 32px;
+  }
+
+  h1,h2,h3{
+    font-family:var(--display);
+    font-weight:500;
+    letter-spacing:-0.01em;
+    color:var(--ink);
+  }
+
+  .eyebrow{
+    font-family:var(--body);
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--rose-deep);
+    font-weight:600;
+  }
+
+  /* ---------- header ---------- */
+
+  header{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:rgba(251,248,246,0.86);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+
+  .nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 32px;
+    max-width:1180px;
+    margin:0 auto;
+  }
+
+  .logo{
+    font-family:var(--display);
+    font-size:21px;
+    font-weight:500;
+    letter-spacing:0.01em;
+  }
+
+  .nav-links{
+    display:flex;
+    gap:36px;
+    align-items:center;
+    font-size:14.5px;
+    color:var(--ink-soft);
+  }
+
+  .nav-links a:hover{ color:var(--ink); }
+
+  .btn{
+    display:inline-block;
+    padding:11px 24px;
+    border-radius:100px;
+    font-size:14px;
+    font-weight:500;
+    transition:transform .25s ease, box-shadow .25s ease, background .25s ease;
+  }
+
+  .btn-primary{
+    background:var(--rose);
+    color:var(--white);
+    box-shadow:0 6px 18px -6px rgba(185,132,148,0.55);
+  }
+  .btn-primary:hover{
+    background:var(--rose-deep);
+    transform:translateY(-1px);
+  }
+
+  .btn-ghost{
+    border:1px solid var(--line);
+    color:var(--ink);
+    background:var(--white);
+  }
+  .btn-ghost:hover{ border-color:var(--rose); }
+
+  .nav .btn-primary{ padding:10px 22px; font-size:13.5px; }
+
+  /* ---------- hero ---------- */
+
+  .hero{
+    padding:96px 0 90px;
+    overflow:hidden;
+  }
+
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.05fr 0.95fr;
+    gap:56px;
+    align-items:center;
+  }
+
+  .hero h1{
+    font-size:56px;
+    line-height:1.08;
+    margin:20px 0 22px;
+  }
+
+  .hero h1 em{
+    font-style:italic;
+    font-weight:400;
+    color:var(--rose-deep);
+  }
+
+  .hero p.lead{
+    font-size:17.5px;
+    color:var(--ink-soft);
+    max-width:440px;
+    margin-bottom:34px;
+  }
+
+  .hero-ctas{
+    display:flex;
+    gap:14px;
+    align-items:center;
+    flex-wrap:wrap;
+  }
+
+  .hero-note{
+    margin-top:26px;
+    font-size:13px;
+    color:var(--ink-soft);
+    letter-spacing:0.02em;
+  }
+
+  /* breathing circle — signature element */
+
+  .breath-stage{
+    position:relative;
+    height:440px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  .breath-ring{
+    position:absolute;
+    border-radius:50%;
+    border:1px solid var(--line);
+  }
+  .r1{ width:420px; height:420px; }
+  .r2{ width:340px; height:340px; }
+  .r3{ width:260px; height:260px; }
+
+  .breath-orb{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    background:radial-gradient(circle at 32% 30%, var(--pink-soft), var(--blue) 70%);
+    box-shadow:0 30px 60px -20px rgba(180,150,170,0.45);
+    animation:breathe 7s ease-in-out infinite;
+  }
+
+  @keyframes breathe{
+    0%,100%{ transform:scale(0.86); }
+    50%{ transform:scale(1.08); }
+  }
+
+  .breath-label{
+    position:absolute;
+    bottom:14px;
+    font-size:12px;
+    letter-spacing:0.16em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    .breath-orb{ animation:none; }
+  }
+
+  /* ---------- services ---------- */
+
+  .section{ padding:88px 0; }
+
+  .section-head{
+    max-width:560px;
+    margin-bottom:52px;
+  }
+
+  .section-head h2{
+    font-size:36px;
+    margin-top:14px;
+  }
+
+  .section-head p{
+    color:var(--ink-soft);
+    font-size:16px;
+    margin-top:14px;
+  }
+
+  .services-grid{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:20px;
+  }
+
+  .service-card{
+    padding:38px 34px;
+    border-radius:20px;
+    border:1px solid var(--line);
+    background:var(--white);
+    transition:transform .3s ease, box-shadow .3s ease;
+  }
+
+  .service-card:hover{
+    transform:translateY(-3px);
+    box-shadow:0 20px 40px -24px rgba(120,100,110,0.25);
+  }
+
+  .service-card.tint-pink{ background:var(--pink-soft); border-color:var(--pink); }
+  .service-card.tint-blue{ background:var(--blue-soft); border-color:var(--blue); }
+
+  .service-icon{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--white);
+    margin-bottom:22px;
+  }
+
+  .service-icon svg{ width:20px; height:20px; stroke:var(--rose-deep); }
+
+  .service-card h3{
+    font-size:21px;
+    font-weight:500;
+    margin-bottom:10px;
+  }
+
+  .service-card p{
+    font-size:14.5px;
+    color:var(--ink-soft);
+  }
+
+  .service-card .duration{
+    display:block;
+    margin-top:18px;
+    font-size:12.5px;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    color:var(--rose-deep);
+    font-weight:600;
+  }
+
+  /* ---------- about / divider ---------- */
+
+  .about{
+    background:linear-gradient(180deg, var(--pink-soft) 0%, var(--blue-soft) 100%);
+  }
+
+  .about-inner{
+    display:grid;
+    grid-template-columns:0.9fr 1.1fr;
+    gap:64px;
+    align-items:center;
+  }
+
+  .wave{
+    width:100%;
+    height:auto;
+  }
+
+  .about h2{
+    font-size:32px;
+    margin-bottom:18px;
+  }
+
+  .about p{
+    color:var(--ink-soft);
+    font-size:16px;
+    max-width:480px;
+  }
+
+  .about-stats{
+    display:flex;
+    gap:40px;
+    margin-top:32px;
+  }
+
+  .about-stats div strong{
+    display:block;
+    font-family:var(--display);
+    font-size:28px;
+    color:var(--ink);
+  }
+  .about-stats div span{
+    font-size:13px;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- booking ---------- */
+
+  .booking{
+    text-align:center;
+  }
+
+  .booking-card{
+    max-width:640px;
+    margin:0 auto;
+    padding:64px 48px;
+    border-radius:28px;
+    background:var(--white);
+    border:1px solid var(--line);
+    box-shadow:0 40px 80px -50px rgba(120,100,110,0.35);
+  }
+
+  .booking-card h2{
+    font-size:32px;
+    margin:16px 0 14px;
+  }
+
+  .booking-card p{
+    color:var(--ink-soft);
+    font-size:15.5px;
+    margin-bottom:32px;
+  }
+
+  .booking-note{
+    margin-top:22px;
+    font-size:12.5px;
+    color:var(--ink-soft);
+  }
+
+  /* Placeholder for Acuity embed — replace this comment block once you
+     have your Acuity scheduling link. See README for instructions. */
+
+  /* ---------- footer ---------- */
+
+  footer{
+    border-top:1px solid var(--line);
+    padding:44px 0;
+  }
+
+  .footer-inner{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:16px;
+  }
+
+  .footer-inner .logo{ font-size:18px; }
+
+  .footer-links{
+    display:flex;
+    gap:26px;
+    font-size:13.5px;
+    color:var(--ink-soft);
+  }
+
+  .footer-copy{
+    font-size:12.5px;
+    color:var(--ink-soft);
+  }
+
+  /* ---------- responsive ---------- */
+
+  @media (max-width: 880px){
+    .nav-links{ display:none; }
+    .hero-grid{ grid-template-columns:1fr; }
+    .breath-stage{ height:320px; order:-1; }
+    .hero h1{ font-size:40px; }
+    .services-grid{ grid-template-columns:1fr; }
+    .about-inner{ grid-template-columns:1fr; }
+    .about-inner .wave{ order:-1; }
+    .section{ padding:64px 0; }
+    .wrap{ padding:0 22px; }
+    .booking-card{ padding:44px 26px; }
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="logo">Stillhaven</div>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#booking">Book</a>
+    </nav>
+    <a href="#booking" class="btn btn-primary">Book Now</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="eyebrow">Massage · Reiki · Sound · Breath</span>
+      <h1>Space to <em>soften,</em><br>and come back to yourself.</h1>
+      <p class="lead">One-to-one massage, reiki, sound healing and breathwork sessions, held gently and at your pace.</p>
+      <div class="hero-ctas">
+        <a href="#booking" class="btn btn-primary">Book a session</a>
+        <a href="#services" class="btn btn-ghost">See services</a>
+      </div>
+      <p class="hero-note">In-studio &amp; mobile sessions available</p>
+    </div>
+    <div class="breath-stage">
+      <div class="breath-ring r1"></div>
+      <div class="breath-ring r2"></div>
+      <div class="breath-ring r3"></div>
+      <div class="breath-orb"></div>
+      <span class="breath-label">breathe in · breathe out</span>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Services</span>
+      <h2>Four ways to unwind</h2>
+      <p>Every session is one-to-one and tailored to what your body and mind need that day.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card tint-pink">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14c0-4 3-7 8-7s8 3 8 7"/><path d="M4 14a8 8 0 0016 0"/><path d="M9 7c0-2 1.5-3 3-3s3 1 3 3"/></svg>
+        </div>
+        <h3>Massage</h3>
+        <p>Therapeutic, slow-paced bodywork to release tension, ease tight muscles and quiet an overactive mind.</p>
+        <span class="duration">60 / 90 min</span>
+      </div>
+
+      <div class="service-card tint-blue">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><circle cx="12" cy="12" r="8" opacity="0.55"/></svg>
+        </div>
+        <h3>Reiki</h3>
+        <p>A gentle, hands-on energy healing session to help restore balance and support your body's own capacity to rest.</p>
+        <span class="duration">45 / 60 min</span>
+      </div>
+
+      <div class="service-card tint-blue">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12h3l2-7 4 14 3-10 2 3h4"/></svg>
+        </div>
+        <h3>1:1 Sound Healing</h3>
+        <p>A private sound bath using singing bowls and tuning forks, shaped around what you're carrying that week.</p>
+        <span class="duration">50 min</span>
+      </div>
+
+      <div class="service-card tint-pink">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v6"/><circle cx="12" cy="15" r="6"/></svg>
+        </div>
+        <h3>Breathwork</h3>
+        <p>Guided breathing sessions to release stored stress, steady the nervous system and bring clarity.</p>
+        <span class="duration">45 min</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section about" id="about">
+  <div class="wrap about-inner">
+    <svg class="wave" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M40 150C40 90 100 90 100 150C100 210 160 210 160 150C160 90 220 90 220 150C220 210 280 210 280 150C280 90 340 90 340 150" stroke="#C99AA6" stroke-width="2" stroke-linecap="round" opacity="0.75"/>
+      <path d="M40 170C40 130 100 130 100 170C100 210 160 210 160 170C160 130 220 130 220 170C220 210 280 210 280 170C280 130 340 130 340 170" stroke="#8FB4C4" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+      <circle cx="70" cy="60" r="4" fill="#F5DEE3"/>
+      <circle cx="330" cy="230" r="5" fill="#DCE9EE"/>
+    </svg>
+    <div>
+      <span class="eyebrow">About</span>
+      <h2>Slower, on purpose.</h2>
+      <p>Every session is unhurried and one-to-one, so there's room to actually settle. Whether you're here for touch, energy work, sound or breath, the aim is the same: to leave a little lighter than you arrived.</p>
+      <div class="about-stats">
+        <div>
+          <strong>1:1</strong>
+          <span>always private sessions</span>
+        </div>
+        <div>
+          <strong>4</strong>
+          <span>modalities offered</span>
+        </div>
+        <div>
+          <strong>60′</strong>
+          <span>average session</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section booking" id="booking">
+  <div class="wrap">
+    <div class="booking-card">
+      <span class="eyebrow">Booking</span>
+      <h2>Ready to begin?</h2>
+      <p>Choose your session and find a time that works for you. Booking takes less than a minute.</p>
+
+      <!--
+        Replace the href below with your Acuity Scheduling link once you have it,
+        e.g. https://app.acuityscheduling.com/schedule.php?owner=XXXXXXXX
+        You can also swap this button for a full embedded calendar — see README.md
+      -->
+      <a href="#" class="btn btn-primary" id="acuity-link">Book a session</a>
+
+      <p class="booking-note">Scheduling powered by Acuity · link to be added</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div class="logo">Stillhaven</div>
+    <div class="footer-links">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#booking">Book</a>
+    </div>
+    <div class="footer-copy">© <span id="year"></span> Stillhaven</div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
