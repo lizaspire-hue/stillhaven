@@ -12,11 +12,16 @@ export function Hero() {
             every good boy and every regal queen deserves the royal treatment.
           </p>
           <div className="hero-ctas">
-            <a href="#booking" className="btn btn-primary">
+            <a
+              href="https://lmfit.as.me/?appointmentType=category:Paws%26Reigns"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
               Book a visit
             </a>
-            <a href="#services" className="btn btn-ghost">
-              See services
+            <a href="#enquire" className="btn btn-ghost">
+              Make an enquiry
             </a>
           </div>
           <p className="hero-note">

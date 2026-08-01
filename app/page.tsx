@@ -5,6 +5,7 @@ import { Services } from "@/components/services"
 import { Equine } from "@/components/equine"
 import { About } from "@/components/about"
 import { Steps } from "@/components/steps"
+import { Enquiry } from "@/components/enquiry"
 import { Booking } from "@/components/booking"
 import { SiteFooter } from "@/components/site-footer"
 
@@ -19,6 +20,7 @@ export default function Page() {
         <Equine />
         <About />
         <Steps />
+        <Enquiry />
         <Booking />
       </main>
       <SiteFooter />

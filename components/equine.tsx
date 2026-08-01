@@ -82,7 +82,12 @@ export function Equine() {
               ))}
             </div>
 
-            <a href="#booking" className="btn btn-primary">
+            <a
+              href="https://lmfit.as.me/?appointmentType=category:Paws%26Reigns"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+            >
               Book an equine session
             </a>
           </div>

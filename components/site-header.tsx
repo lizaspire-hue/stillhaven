@@ -13,9 +13,15 @@ export function SiteHeader() {
           <a href="#equine">Equine</a>
           <a href="#about">About</a>
           <a href="#how">How it works</a>
+          <a href="#enquire">Enquire</a>
           <a href="#booking">Book</a>
         </nav>
-        <a href="#booking" className="btn btn-primary">
+        <a
+          href="https://lmfit.as.me/?appointmentType=category:Paws%26Reigns"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="btn btn-primary"
+        >
           Book a visit
         </a>
       </div>
