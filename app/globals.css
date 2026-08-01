@@ -707,6 +707,121 @@ footer {
   max-width: 340px;
 }
 
+/* ---------- about liz ---------- */
+
+.liz {
+  background: linear-gradient(180deg, var(--color-sage-soft) 0%, var(--color-gold-soft) 100%);
+}
+
+.liz-inner {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.liz-media {
+  position: relative;
+}
+
+.liz-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  border: 1px solid var(--color-line);
+  object-fit: cover;
+  box-shadow: 0 30px 60px -40px rgba(51, 70, 58, 0.4);
+}
+
+.liz-body h2 {
+  font-size: 34px;
+  margin: 14px 0 18px;
+}
+
+.liz-body p {
+  color: var(--color-ink-soft);
+  font-size: 16px;
+  max-width: 480px;
+  margin-bottom: 16px;
+}
+
+.liz-body p strong {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+.liz-creds {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 22px 0 28px;
+}
+
+.liz-creds span {
+  font-size: 12.5px;
+  letter-spacing: 0.03em;
+  color: var(--color-green-deep);
+  padding: 7px 15px;
+  border-radius: 100px;
+  border: 1px solid var(--color-sage);
+  background: var(--color-white);
+  font-weight: 500;
+}
+
+/* ---------- testimonials ---------- */
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.testimonial-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 32px 28px;
+  border-radius: 20px;
+  border: 1px solid var(--color-line);
+  background: var(--color-white);
+}
+
+.testimonial-card .stars {
+  color: var(--color-gold);
+  font-size: 15px;
+  letter-spacing: 2px;
+}
+
+.testimonial-card blockquote {
+  font-size: 15.5px;
+  line-height: 1.6;
+  color: var(--color-ink);
+  flex: 1;
+}
+
+.testimonial-card figcaption {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-top: 1px solid var(--color-line);
+  padding-top: 16px;
+}
+
+.testimonial-card figcaption strong {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--color-ink);
+}
+
+.testimonial-card figcaption span {
+  font-size: 12.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  font-weight: 600;
+}
+
 /* ---------- equine (dark green) ---------- */
 
 .equine {
@@ -891,6 +1006,16 @@ footer {
   }
   .enquiry-form {
     padding: 28px 22px;
+  }
+  .liz-inner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .liz-media {
+    max-width: 380px;
+  }
+  .testimonials-grid {
+    grid-template-columns: 1fr;
   }
   .section {
     padding: 64px 0;
