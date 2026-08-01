@@ -10,7 +10,7 @@ const services: Service[] = [
   {
     title: "Full Groom & Style",
     desc: "Bath, blow-dry, breed-specific trim and a finishing style that keeps your pet looking (and feeling) their best.",
-    price: "from $65",
+    price: "from £65",
     tint: "tint-sage",
     icon: (
       <svg viewBox="0 0 24 24" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -24,7 +24,7 @@ const services: Service[] = [
   {
     title: "Signature Spa Day",
     desc: "The full pampering: soothing hydro-bath, coat mask, nail care, paw balm and a gentle de-shed treatment.",
-    price: "from $95",
+    price: "from £95",
     tint: "tint-gold",
     icon: (
       <svg viewBox="0 0 24 24" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -35,7 +35,7 @@ const services: Service[] = [
   {
     title: "Bath & Freshen-Up",
     desc: "A quick, calming clean-up between full grooms — wash, dry, brush-out and a light tidy of face and paws.",
-    price: "from $40",
+    price: "from £40",
     tint: "tint-gold",
     icon: (
       <svg viewBox="0 0 24 24" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -47,7 +47,7 @@ const services: Service[] = [
   {
     title: "Mobile Grooming",
     desc: "We come to you. A fully equipped, low-stress grooming visit right outside your door for nervous or busy pets.",
-    price: "from $110",
+    price: "from £110",
     tint: "tint-sage",
     icon: (
       <svg viewBox="0 0 24 24" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

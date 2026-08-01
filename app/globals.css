@@ -568,6 +568,136 @@ footer {
   color: var(--color-ink-soft);
 }
 
+/* ---------- equine (dark green) ---------- */
+
+.equine {
+  background: var(--color-green-deep);
+  color: var(--color-cream);
+}
+
+.equine-inner {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.equine-media {
+  position: relative;
+}
+
+.equine-media img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 24px;
+  border: 1px solid rgba(240, 227, 200, 0.16);
+}
+
+.equine .eyebrow {
+  color: var(--color-gold-soft);
+}
+
+.equine h2 {
+  font-size: 38px;
+  color: var(--color-cream);
+  margin: 14px 0 18px;
+}
+
+.equine h2 em {
+  font-style: italic;
+  font-weight: 400;
+  color: var(--color-gold-soft);
+}
+
+.equine p.lead {
+  color: rgba(252, 249, 242, 0.78);
+  font-size: 16.5px;
+  max-width: 480px;
+  margin-bottom: 30px;
+}
+
+.equine-offerings {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.equine-card {
+  padding: 26px 24px;
+  border-radius: 18px;
+  background: rgba(240, 227, 200, 0.06);
+  border: 1px solid rgba(240, 227, 200, 0.14);
+}
+
+.equine-card .equine-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(240, 227, 200, 0.1);
+  border: 1px solid rgba(240, 227, 200, 0.18);
+  margin-bottom: 16px;
+}
+
+.equine-card .equine-icon svg {
+  width: 22px;
+  height: 22px;
+  stroke: var(--color-gold-soft);
+  fill: none;
+}
+
+.equine-card h3 {
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--color-cream);
+  margin-bottom: 8px;
+}
+
+.equine-card p {
+  font-size: 14px;
+  color: rgba(252, 249, 242, 0.72);
+}
+
+.equine-card .price {
+  display: block;
+  margin-top: 16px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-gold-soft);
+  font-weight: 600;
+}
+
+.equine-helps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.equine-helps span {
+  font-size: 12.5px;
+  letter-spacing: 0.03em;
+  color: rgba(252, 249, 242, 0.82);
+  padding: 7px 15px;
+  border-radius: 100px;
+  border: 1px solid rgba(240, 227, 200, 0.18);
+  background: rgba(240, 227, 200, 0.05);
+}
+
+.equine .btn-primary {
+  background: var(--color-gold);
+  border-color: var(--color-gold);
+  color: var(--color-green-deep);
+}
+.equine .btn-primary:hover {
+  background: var(--color-gold-soft);
+}
+
 /* ---------- responsive ---------- */
 
 @media (max-width: 880px) {
@@ -594,6 +724,21 @@ footer {
   }
   .about-media {
     order: -1;
+  }
+  .equine-inner {
+    grid-template-columns: 1fr;
+  }
+  .equine-media {
+    order: -1;
+  }
+  .equine-media img {
+    height: 320px;
+  }
+  .equine-offerings {
+    grid-template-columns: 1fr;
+  }
+  .equine h2 {
+    font-size: 30px;
   }
   .steps-grid {
     grid-template-columns: 1fr;
