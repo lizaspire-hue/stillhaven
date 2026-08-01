@@ -541,6 +541,48 @@
   max-width: 340px;
 }
 
+/* ---------- about liz ---------- */
+
+.liz {
+  background: linear-gradient(180deg, var(--pink-soft) 0%, var(--blue-soft) 100%);
+}
+
+.lizInner {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.lizMedia {
+  position: relative;
+}
+
+.lizPhoto {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  border: 1px solid var(--line);
+  object-fit: cover;
+  box-shadow: 0 30px 60px -40px rgba(120, 100, 110, 0.4);
+}
+
+.lizBody h2 {
+  font-size: 34px;
+  margin: 14px 0 18px;
+}
+
+.lizBody p {
+  color: var(--ink-soft);
+  font-size: 16px;
+  max-width: 460px;
+  margin-bottom: 18px;
+}
+
+.lizBody .btn {
+  margin-top: 10px;
+}
+
 /* ---------- footer ---------- */
 
 .footer {
@@ -609,6 +651,13 @@
   }
   .contactForm {
     padding: 28px 22px;
+  }
+  .lizInner {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .lizMedia {
+    max-width: 380px;
   }
   .section {
     padding: 64px 0;

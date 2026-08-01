@@ -6,6 +6,7 @@ import { ShServices } from "@/components/stillhaven/sh-services"
 import { ShAbout } from "@/components/stillhaven/sh-about"
 import { ShContact } from "@/components/stillhaven/sh-contact"
 import { ShBooking } from "@/components/stillhaven/sh-booking"
+import { ShLiz } from "@/components/stillhaven/sh-liz"
 import { ShFooter } from "@/components/stillhaven/sh-footer"
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function StillhavenPage() {
         <ShAbout />
         <ShContact />
         <ShBooking />
+        <ShLiz />
       </main>
       <ShFooter />
     </div>
