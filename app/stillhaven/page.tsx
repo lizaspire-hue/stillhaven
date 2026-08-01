@@ -4,6 +4,7 @@ import { ShHeader } from "@/components/stillhaven/sh-header"
 import { ShHero } from "@/components/stillhaven/sh-hero"
 import { ShServices } from "@/components/stillhaven/sh-services"
 import { ShAbout } from "@/components/stillhaven/sh-about"
+import { ShContact } from "@/components/stillhaven/sh-contact"
 import { ShBooking } from "@/components/stillhaven/sh-booking"
 import { ShFooter } from "@/components/stillhaven/sh-footer"
 
@@ -21,6 +22,7 @@ export default function StillhavenPage() {
         <ShHero />
         <ShServices />
         <ShAbout />
+        <ShContact />
         <ShBooking />
       </main>
       <ShFooter />

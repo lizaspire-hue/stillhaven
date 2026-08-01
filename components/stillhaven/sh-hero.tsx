@@ -15,11 +15,16 @@ export function ShHero() {
             One-to-one massage, reiki, sound healing and breathwork sessions, held gently and at your pace.
           </p>
           <div className={styles.heroCtas}>
-            <a href="#booking" className={`${styles.btn} ${styles.btnPrimary}`}>
+            <a
+              href="https://lmfit.as.me/?appointmentType=category:Stillhaven%20Services"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${styles.btn} ${styles.btnPrimary}`}
+            >
               Book a session
             </a>
-            <a href="#services" className={`${styles.btn} ${styles.btnGhost}`}>
-              See services
+            <a href="#contact" className={`${styles.btn} ${styles.btnGhost}`}>
+              Get in touch
             </a>
           </div>
           <p className={styles.heroNote}>In-studio &amp; mobile sessions available</p>

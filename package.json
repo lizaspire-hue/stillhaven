@@ -11,7 +11,8 @@
   "dependencies": {
     "next": "^15.2.4",
     "react": "^19",
-    "react-dom": "^19"
+    "react-dom": "^19",
+    "resend": "^6.18.1"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4.3.3",
